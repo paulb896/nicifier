@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Nicifier</title>
+    <meta name="description" content="Code Examples">
+    <style>
+        a {
+            text-decoration: none;
+            color: #4183c4;
+        }
+        body{
+            background-color: #f3f3f3;
+            margin: 0;
+        }
+        body > *{
+            transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+        }
+        div > a:hover {
+            text-shadow: 1px 1px rgba(210,210,210,0.8);
+        }
+        header{
+            font-size: 125%;
+            padding: 0;
+            text-align: center;
+            position: absolute;
+            background-color: #f3f3f3;
+            width: 100%;
+            box-shadow: 0px -4px 10px rgba(122,122,122,0.8) inset;
+            height: 105px;
+            font-style: italic;
+        }
+        header:hover{
+            height: 170px;
+        }
+        h1{
+            margin: 10px 0 0 0;
+        }
+        h2{
+            margin:0 0 10px;
+        }
+        h2 > a:hover {
+            text-shadow: 1px 1px rgba(50,50,50,0.3);
+        }
+
+        p > a:hover {
+            text-shadow: 1px 1px rgba(250,250,250,0.8);
+        }
+        .examples-container{
+            background-color: gainsboro;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position-y: -303px;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 950px;
+            padding-top: 180px;
+            font-size: 120%;
+            padding-left: 45px;
+
+        }
+        .examples-container > div {
+            background-color: rgba(30,20,20,0.75);
+            width: 40%;
+            display: inline-table;
+            padding:20px;
+            opacity: 0.3;
+            height: 200px;
+            box-shadow: 7px 7px 15px rgba(50,50,50,1);
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        .examples-container > div:hover{
+            opacity: 1;
+            color: whitesmoke;
+        }
+        .git-links{
+            margin-top: 25px;
+        }
+        .git-links > a{
+           margin-left: 110px;
+            font-weight: 500;
+        }
+        .git-links > a:hover{
+            text-shadow: 1px 1px 2px rgba(160,160,160,1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Live Code Examples</h1>
+    <h2><a href="https://github.com/paulb896">GitHub paulb896</a></h2>
+    <div class="git-links">
+        <a href="https://github.com/paulb896/ZoomingMapApp">Zooming Map App <img src="github-icon-small.png" /></a>
+        <a href="https://github.com/paulb896/IdBuyThat">I'd Buy That <img src="github-icon-small.png" /></a>
+        <a href="https://github.com/paulb896/Express_Angular_Reservations">Express Angular Reservations <img src="github-icon-small.png" /></a>
+    </div>
+</header>
+<div class="examples-container">
+    <div>
+        <a href="ZoomingMapApp"><h2>Zooming Map App</h2></a>
+        <p>With the use of <a href="https://docs.angularjs.org/guide/directive/">AngularJS Directives</a>, <a href="http://www.greensock.com">Greensock</a>, and <a href="https://developers.google.com/maps/">Google Maps Api</a>, a user can simultaneously pan and zoom around a map.</p>
+    </div>
+    <div>
+        <a href="IdBuyThat"><h2>I'd Buy That</h2></a>
+        <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="http://www.createjs.com/">CreateJS</a>, users can draw blueprints of new product ideas, and have other users vote on their interest.</p>
+    </div>
+    <div>
+        <a href="ReserveTheTime"><h2>Reserve The Time</h2></a>
+        <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="https://developers.google.com/accounts/docs/OAuth2">Google Auth Api</a> and <a href="https://developers.google.com/places/documentation/">Google Places Api</a>, a user can locate nearby places and request a reservation time.</p>
+    </div>
+    <div>
+        <h2>More to come!</h2>
+    </div>
+</div>
+</body>
+</html>
