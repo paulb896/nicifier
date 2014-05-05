@@ -6,6 +6,16 @@
     <meta name="description" content="Links to Running Code Examples from https://github.com/paulb896">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <style>
+        @media only screen and (min-width: 1501px) {
+            .example-project{
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 1501px) {
+            .example-project{
+                width: 85%;
+            }
+        }
         a {
             text-decoration: none;
             color: #4183c4;
@@ -17,7 +27,6 @@
         body > *{
             transition-duration: 1.85s;
             -webkit-transition-duration: 1.85s;
-            #transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
             transition-delay: 0.1s;
         }
         div > a:hover {
@@ -62,7 +71,7 @@
             background-size: 100%;
             background-repeat: no-repeat;
             width: 100%;
-            height: 950px;
+            height: 1200px;
             padding-top: 180px;
             font-size: 120%;
             margin: 0;
@@ -73,7 +82,6 @@
         }
         .examples-container > div {
             background-color: rgba(10,10,10,0.8);
-            width: 400px;
             display: inline-table;
             padding:20px;
             opacity: 0.3;
@@ -85,6 +93,7 @@
             opacity: 1;
             color: whitesmoke;
         }
+
         .git-links{
             margin-top: 21px;
         }
@@ -103,7 +112,7 @@
 </head>
 <body>
 <header>
-    <h1>Live Code Examples</h1>
+    <h1>AngularJS Code Examples</h1>
     <h2><a href="https://github.com/paulb896">GitHub paulb896</a></h2>
     <div class="git-links">
         <a href="https://github.com/paulb896/ZoomingMapApp">Zooming Map App <img src="github-icon-small.png" /></a>
@@ -112,15 +121,15 @@
     </div>
 </header>
 <div class="examples-container">
-    <div>
+    <div class="example-project">
         <a href="zoomingmapapp/"><h2>Zooming Map App</h2></a>
         <p>With the use of <a href="https://docs.angularjs.org/guide/directive/">AngularJS Directives</a>, <a href="http://www.greensock.com">Greensock</a>, and <a href="https://developers.google.com/maps/">Google Maps Api</a>, a user can simultaneously pan and zoom around a map.</p>
     </div>
-    <div>
+    <div class="example-project">
         <a href="idbuythat/"><h2>I'd Buy That</h2></a>
         <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="http://www.createjs.com/">CreateJS</a>, users can draw blueprints of new product ideas, and have other users vote on their interest.</p>
     </div>
-    <div>
+    <div class="example-project">
         <a href="reservethetime/"><h2>Reserve The Time</h2></a>
         <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="https://developers.google.com/accounts/docs/OAuth2">Google Auth Api</a> and <a href="https://developers.google.com/places/documentation/">Google Places Api</a>, a user can locate nearby places and request a reservation time.</p>
     </div>
