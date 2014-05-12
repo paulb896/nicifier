@@ -20,10 +20,10 @@
         }
         @media only screen and (max-width: 1501px) {
             .example-project{
-                width: 95%;
+                width: 100%;
             }
             body > header {
-                height: 100px;
+                height: 90px;
             }
             body > header:hover{
                 height: 260px;
@@ -55,10 +55,9 @@
             font-weight: 900;
         }
         header{
-            padding-left: 14px;
             position: absolute;
             background-color: rgba(250,250,250,0.74);
-            width: 96%;
+            width: 100%;
             box-shadow: 0px 4px 10px rgba(122,122,122,0.8) inset, -3px -4px 5px rgba(122,122,122,0.5) inset;
             font-style: italic;
             font-size: 115%;
@@ -77,12 +76,13 @@
             font-style: italic;
         }
         h2{
-            margin:0 0 10px;
-            font-weight: 300;
-            font-style: normal;
+            height: 35px;
+            display: inline-block;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 100;
         }
-        h2 > a:hover {
-            font-style: italic;
+        h2:hover {
             font-weight: 900;
         }
         p{
@@ -99,27 +99,25 @@
             height: 1200px;
             padding-top: 180px;
             font-size: 120%;
-            margin: 0;
+
         }
         .examples-container > div {
             background-color: rgba(220,220,220,1);
             display: inline-table;
-            padding:20px;
             opacity: 0.3;
-            height: 161px;
             -webkit-box-shadow:4px 4px 4px rgba(100, 100, 100, 0.4);
             -moz-box-shadow:4px 4px 4px rgba(100, 100, 100, 0.4);
             box-shadow:4px 4px 4px rgba(100, 100, 100, 0.4);
-            margin-bottom: 5px;
             color: transparent;
+            height: 130px;
         }
         .examples-container > div:hover{
             opacity: 1;
             color: black;
         }
-
-        .git-links{
-            margin-top: 26px;
+        .example-project > a,p{
+            margin-left: 20px;
+            margin-top: 0;
         }
         .git-links > a{
             font-weight: 100;
@@ -127,7 +125,7 @@
             font-size: 120%;
         }
         .git-links > a:hover{
-            font-weight: 800;
+            #font-weight: 800;
         }
         .git-links > a >img{
             vertical-align: text-top;
