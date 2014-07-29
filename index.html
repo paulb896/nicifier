@@ -12,14 +12,13 @@
                 background-size: contain;
             }
             body > header {
-                height: 90px;
+                height: 60px;
             }
-
             body > header:hover{
-                height: 147px;
+                height: 100px;
             }
             div.examples-container{
-                padding-top: 147px;
+                padding-top: 100px;
             }
         }
         @media screen and (min-width: 801px) and (max-width: 1500px) {
@@ -28,10 +27,10 @@
                 background-size: contain;
             }
             body > header {
-                height: 90px;
+                height: 60px;
             }
             body > header:hover{
-                height: 210px;
+                height: 100px;
             }
 
             .git-links > a {
@@ -39,21 +38,21 @@
                 height: 30px;
             }
             div.examples-container{
-                padding-top: 210px;
+                padding-top: 100px;
             }
         }
         @media only screen and (max-width: 800px) {
             body > header {
-                height: 107px;
+                height: 50px;
             }
             body > header:hover{
-                height: 310px;
+                height: 140px;
             }
             .example-project{
                 width: 100%;
             }
             div.examples-container{
-                padding-top: 310px;
+                padding-top: 140px
             }
         }
         a {
@@ -70,7 +69,7 @@
             transition-delay: 0.1s;
         }
         div > a:hover {
-            font-weight: 900;
+            text-decoration: underline;
         }
         header{
             position: absolute;
@@ -100,16 +99,16 @@
             margin-top: 10px;
         }
         h2:hover {
-            font-weight: 900;
+            text-decoration: underline;
         }
         p{
             font-family: "Times New Roman", Symbola, serif, monospace;
         }
         p > a:hover {
-            text-shadow: 2px 2px 1px rgba(100,100,100,0.2);
+            text-decoration: underline;
         }
         .examples-container{
-            background: url(background12.jpg);
+            background: url(background10.jpg);
             background-size: 130%;
             background-repeat: no-repeat;
             width: 100%;
@@ -125,23 +124,26 @@
             display: inline-block;
             opacity: 0.6;
             color: transparent;
-            background-size: 20%;
+            background-size: 10%;
             background-repeat: no-repeat;
-            background-position-x: 100%;
-            transition-duration: 1.85s;
-            -webkit-transition-duration: 1.85s;
-            transition-delay: 0.5s;
+            background-position-x: 30%;
+            transition-duration: 0.35s;
+            -webkit-transition-duration: 0.35s;
         }
         .examples-container > div:hover{
-            transition-delay: 0.1s;
             opacity: 1;
             color: black;
-            box-shadow: 7px 10px 9px rgba(50,50,50,0.6),-7px -10px 9px rgba(50,50,50,0) ;
+            box-shadow: 7px 10px 9px rgba(50,50,50,0.6),-7px -10px 9px rgba(50,50,50,0);
+        }
+        .example-project > img {
+            margin-left: 20px;
         }
         .example-project > a,p{
             margin-left: 30px;
-            margin-top: 0px;
             width: 70%;
+        }
+        .git-links{
+            margin-left: 30px;
         }
         .git-links > a{
             font-weight: 100;
@@ -156,23 +158,34 @@
 <header>
     <h1>AngularJS Code Examples</h1>
     <h2><a href="https://github.com/paulb896">GitHub paulb896</a></h2>
-    <div class="git-links">
-        <a href="https://github.com/paulb896/ZoomingMapApp">Zooming Map App <img src="github-icon-small.png" /></a>
-        <a href="https://github.com/paulb896/IdBuyThat">I'd Buy That <img src="github-icon-small.png" /></a>
-        <a href="https://github.com/paulb896/Express_Angular_Reservations">Express Angular Reservations <img src="github-icon-small.png" /></a>
+
+
+
     </div>
 </header>
 <div class="examples-container">
-    <div class="example-project" style="background-image: url(zma-example.jpg)">
+    <div class="example-project">
+        <img src="zma-example.jpg">
         <a href="zooming+map+app/"><h2>Zooming Map App</h2></a>
+        <div class="git-links">
+            <a href="https://github.com/paulb896/ZoomingMapApp">Zooming Map App on GitHub <img src="github-icon-small.png" /></a>
+        </div>
         <p>With the use of <a href="https://docs.angularjs.org/guide/directive/">AngularJS Directives</a>, <a href="http://www.greensock.com">Greensock</a>, and <a href="https://developers.google.com/maps/">Google Maps Api</a>, a user can simultaneously pan and zoom around a map.</p>
     </div>
-    <div class="example-project" style="background-image: url(ibt-example.jpg)">
+    <div class="example-project">
+        <img src="ibt-example.jpg">
         <a href="id+buy+that/"><h2>I'd Buy That</h2></a>
+        <div class="git-links">
+            <a href="https://github.com/paulb896/IdBuyThat">I'd Buy That on GitHub <img src="github-icon-small.png" /></a>
+        </div>
         <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="http://www.createjs.com/">CreateJS</a>, users can draw blueprints of new product ideas, and have other users vote on their interest.</p>
     </div>
-    <div class="example-project" style="background-image: url(rtt-example.jpg)">
+    <div class="example-project">
+        <img src="rtt-example.jpg">
         <a href="reserve+the+time/"><h2>Reserve The Time</h2></a>
+        <div class="git-links">
+            <a href="https://github.com/paulb896/Express_Angular_Reservations">Reserve The Time on GitHub <img src="github-icon-small.png" /></a>
+        </div>
         <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="https://developers.google.com/accounts/docs/OAuth2">Google Auth Api</a> and <a href="https://developers.google.com/places/documentation/">Google Places Api</a>, a user can locate nearby places and request a reservation time.</p>
     </div>
     <div class="example-project">
