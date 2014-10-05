@@ -36,13 +36,13 @@
         }
         @media only screen and (max-width: 800px) {
             body > header {
-                height: 190px;
+                height: 170px;
             }
             .example-project{
                 width: 100%;
             }
             div.examples-container{
-                padding-top: 160px
+                padding-top: 60px;
             }
         }
         a {
@@ -55,7 +55,6 @@
         }
         body{
             background:url('background_334.jpg');
-            background-repeat: no-repeat;
             margin:0;
             -webkit-font-smoothing:antialiased;
         }
@@ -81,7 +80,7 @@
             font-style: italic;
         }
         h2{
-            margin:10px 30px 0px 30px;
+            margin:10px 30px 0px 10px;
             height: 35px;
             display: inline-block;
             font-weight: 100;
@@ -104,7 +103,6 @@
             display: flex;
             -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
-            margin-bottom: 100px;
         }
         .examples-container > div {
             background-color: rgba(255,255,255,0.8);
@@ -122,17 +120,20 @@
             transition-duration: 0.85s;
             -webkit-transition-duration: 0.85s;
         }
-        .example-project > img {
-            width: 35px;
-            margin-right:30px;
-            margin-top:30px;
-            position:absolute;
-            left: 300px;
+        .example-project > a > img {
+            width: 15px;
+            height:15px;
+            border-radius:30px;
             border-top:solid black 1px;
+            margin-left:30px;
+            border: solid rgba(100,100,100, 0.3) 2px;
+            vertical-align: inherit;
         }
+        .example-project > a > img:hover {
+			border-color: #375965;
+		}
         .example-project > a {
-	     display:block;
-          margin-top:15px;
+	        display:block;
         }
         .example-project > p{
             margin-left: 30px;
@@ -148,7 +149,7 @@
             font-size: 120%;
         }
         .git-links > a >img{
-            vertical-align: text-top;
+            vertical-align: baseline;
         }
     </style>
 </head>
@@ -160,40 +161,35 @@
 </header>
 <div class="examples-container">
     <div class="example-project">
-        <img src="zma-example.jpg">
-        <a href="zooming+map+app/"><h2>Zooming Map App</h2></a>
+        <a href="zooming+map+app/"><img src="zma-example.jpg"><h2>Zooming Map App</h2></a>
         <div class="git-links">
             <a href="https://github.com/paulb896/ZoomingMapApp">Source on GitHub <img src="github-icon-small.png" /></a>
         </div>
         <p>With the use of <a href="https://docs.angularjs.org/guide/directive/">AngularJS Directives</a>, <a href="http://www.greensock.com">Greensock</a>, and <a href="https://developers.google.com/maps/">Google Maps Api</a>, a user can simultaneously pan and zoom around a map.</p>
     </div>
     <div class="example-project">
-        <img src="ibt-example.jpg">
-        <a href="id+buy+that/"><h2>I'd Buy That</h2></a>
+        <a href="id+buy+that/"><img src="ibt-example.jpg"><h2>I'd Buy That</h2></a>
         <div class="git-links">
-            <a href="https://github.com/paulb896/IdBuyThat">Source on GitHub <img src="github-icon-small.png" /></a>
+            <a href="https://github.com/paulb896/IdBuyThat">Source on GitHub <img src="github-icon-small.png"/></a>
         </div>
         <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="http://www.createjs.com/">CreateJS</a>, users can draw blueprints of new product ideas, and have other users vote on their interest.</p>
     </div>
     <div class="example-project">
-        <img src="rtt-example.jpg">
-        <a href="reserve+the+time/"><h2>Reserve The Time</h2></a>
+        <a href="reserve+the+time/"><img src="rtt-example.jpg"><h2>Reserve The Time</h2></a>
         <div class="git-links">
             <a href="https://github.com/paulb896/Express_Angular_Reservations">Source on GitHub <img src="github-icon-small.png" /></a>
         </div>
         <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="https://developers.google.com/accounts/docs/OAuth2">Google Auth Api</a> and <a href="https://developers.google.com/places/documentation/">Google Places Api</a>, a user can locate nearby places and request a reservation time.</p>
     </div>
     <div class="example-project">
-      <img src="twoAppsExample.png">
-        <a href="two+angular+apps/"><h2>Two Angular Apps</h2></a>
+        <a href="two+angular+apps/"><img src="twoAppsExample.png"><h2>Two Angular Apps</h2></a>
         <div class="git-links">
             <a href="https://github.com/paulb896/twoAppsApp">Source on GitHub <img src="github-icon-small.png" /></a>
         </div>
         <p>Two separate <a href="https://docs.angularjs.org/">AngularJS</a> apps on one page</p>
     </div>
     <div class="example-project">
-      <img src="draggable-example.png">
-        <a href="angular+drag+item/"><h2>Draggable Items</h2></a>
+        <a href="angular+drag+item/"><img src="draggable-example.png"><h2>Draggable Items</h2></a>
         <div class="git-links">
             <a href="https://github.com/paulb896/Draggable_Organized_Collections">Source on GitHub <img src="github-icon-small.png" /></a>
         </div>
