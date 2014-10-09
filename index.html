@@ -8,7 +8,7 @@
     <style>
         @media only screen and (min-width: 1501px) {
             .example-project{
-                width: 50%;
+                width: 49%;
                 background-size: 30%;
             }
             body > header {
@@ -47,7 +47,7 @@
         }
         a {
             text-decoration: none;
-            color: #375965;
+            color: #6D706D;
         }
         a:hover{
             -webkit-text-stroke-width: 0.2px;
@@ -55,7 +55,7 @@
         }
         body{
             background:url('controller.jpg');
-            background-position: 0px 81px;
+            background-position: 0 81px;
             background-repeat: no-repeat;
             margin:0;
             -webkit-font-smoothing:antialiased;
@@ -70,6 +70,7 @@
             -webkit-transition-duration: 0.85s;
             margin-left: 0;
             width: 100%;
+            text-align:center;
         }
         header > h2 {
 		    margin-left:30px;
@@ -77,7 +78,7 @@
         h1{
             margin:10px 30px 0px 0px;
             margin-top:10px;
-            margin-left:30px;
+            text-align:center;
             color: rgba(105, 113, 124, 1);
             font-size: 211%;
             font-family: "Times New Roman", Symbola, serif;
@@ -85,10 +86,11 @@
             font-style: italic;
         }
         h2{
+			text-align:center;
             margin:10px 30px 0px 10px;
             height: 35px;
             display: inline-block;
-            font-weight: 100;
+            font-weight: 700;
         }
         h2:hover {
           -webkit-text-stroke-width: 0.2px;
@@ -110,6 +112,7 @@
             flex-flow: row wrap;
         }
         .examples-container > div {
+			color: white;
             background-color: rgba(255,255,255,0.8);
             display: inline-block;
             background-size: 10%;
@@ -117,7 +120,6 @@
             background-position-x: 30%;
             transition-duration: 0.85s;
             -webkit-transition-duration: 0.85s;
-            box-shadow:-1px 1px 1px rgba(10,10,10,0.1) inset;
         }
         .examples-container > div:hover{
             background-color: rgba(255,255,255,1);
@@ -125,38 +127,42 @@
             z-index:100;
             transition-duration: 0.85s;
             -webkit-transition-duration: 0.85s;
-            box-shadow:-1px 1px 3px rgba(10,10,10,0.2) inset;
         }
+        .example-project {
+            padding-left:20px;
+		}
         .example-project > a > img {
             width: 13px;
             height:13px;
-            border-radius:30px;
+            border-radius:1px;
             border-top:solid black 1px;
-            margin-left:29px;
+            margin-left:5px;
             border: solid rgba(100,100,100, 0.3) 2px;
             vertical-align: inherit;
+            border-color: #375965;
         }
         .example-project > a > img:hover {
-			border-color: #375965;
+			border-color: #375995;
 		}
         .example-project > a {
-	        display:block;
+	        display:inline-table;
+	        border-bottom:solid black 1px;
         }
         .example-project > p{
-            margin-left: 30px;
-            width: 70%;
-            vertical-align: baseline;
+            margin-left: 5px;
+            width: 50%;
+
         }
-        .git-links{
-            margin-left: 30px;
-            margin-top:15px;
+        .git-link {
+            margin: 15px 10px 0 30px;
+            display:-webkit-inline-box;
         }
-        .git-links > a{
-            font-weight: 100;
-            font-size: 120%;
+        .git-link  > a {
+            border-left: solid black 1px;
+            padding-left: 15px;
         }
-        .git-links > a >img{
-			margin-right: 10px;
+        .git-link > a >img{
+			margin-right: 7px;
             vertical-align: baseline;
         }
     </style>
@@ -170,35 +176,35 @@
 <div class="examples-container">
     <div class="example-project">
         <a href="zooming+map+app/"><img src="zma-example.jpg"><h2>Zooming Map App</h2></a>
-        <div class="git-links">
+        <div class="git-link">
             <a href="https://github.com/paulb896/ZoomingMapApp"><img src="github-icon-small.png"/>Source on GitHub</a>
         </div>
         <p>With the use of <a href="https://docs.angularjs.org/guide/directive/">AngularJS Directives</a>, <a href="http://www.greensock.com">Greensock</a>, and <a href="https://developers.google.com/maps/">Google Maps Api</a>, a user can simultaneously pan and zoom around a map.</p>
     </div>
     <div class="example-project">
         <a href="id+buy+that/"><img src="ibt-example.jpg"><h2>I'd Buy That</h2></a>
-        <div class="git-links">
+        <div class="git-link">
             <a href="https://github.com/paulb896/IdBuyThat"><img src="github-icon-small.png"/>Source on GitHub</a>
         </div>
         <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="http://www.createjs.com/">CreateJS</a>, users can draw blueprints of new product ideas, and have other users vote on their interest.</p>
     </div>
     <div class="example-project">
         <a href="reserve+the+time/"><img src="rtt-example.jpg"><h2>Reserve The Time</h2></a>
-        <div class="git-links">
+        <div class="git-link">
             <a href="https://github.com/paulb896/Express_Angular_Reservations"><img src="github-icon-small.png" />Source on GitHub</a>
         </div>
         <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="https://developers.google.com/accounts/docs/OAuth2">Google Auth Api</a> and <a href="https://developers.google.com/places/documentation/">Google Places Api</a>, a user can locate nearby places and request a reservation time.</p>
     </div>
     <div class="example-project">
         <a href="two+angular+apps/"><img src="twoAppsExample.png"><h2>Two Angular Apps</h2></a>
-        <div class="git-links">
+        <div class="git-link">
             <a href="https://github.com/paulb896/twoAppsApp"><img src="github-icon-small.png" />Source on GitHub</a>
         </div>
         <p>Two separate <a href="https://docs.angularjs.org/">AngularJS</a> apps on one page</p>
     </div>
         <div class="example-project">
         <a href="angular-animate/"><img src="animate-example.png"><h2>Angular ngAnimate Transitions</h2></a>
-        <div class="git-links">
+        <div class="git-link">
             <a href="https://github.com/paulb896/AnimateIt"><img src="github-icon-small.png" />Source on GitHub</a>
         </div>
         <p><a href="https://docs.angularjs.org/">AngularJS</a> animations using <a href="https://docs.angularjs.org/api/ngAnimate">ngAnimate</a></p>
