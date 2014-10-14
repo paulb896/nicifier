@@ -15,7 +15,10 @@
                 height: 40px;
             }
             body > header:hover {
-                height: 70px;
+                height: 90px;
+            }
+            h1 {
+                font-size: 168%;
             }
         }
         @media screen and (min-width: 801px) and (max-width: 1500px) {
@@ -27,11 +30,14 @@
                 height: 37px;
             }
             body > header:hover {
-                height: 70px;
+                height: 90px;
             }
             .git-links > a {
                 display: block;
                 height: 30px;
+            }
+            h1 {
+                font-size: 160%;
             }
         }
         @media only screen and (max-width: 800px) {
@@ -44,10 +50,13 @@
             .example-project{
                 width: 100%;
             }
+            h1 {
+                font-size: 128%;
+            }
         }
         a {
             text-decoration: none;
-            color: #6D706D;
+            color: rgb(60,55,55);
         }
         a:hover{
             -webkit-text-stroke-width: 0.2px;
@@ -66,30 +75,31 @@
             font-style: italic;
             font-size: 125%;
             overflow: hidden;
-            transition-duration: 0.85s;
-            -webkit-transition-duration: 0.85s;
-            margin-left: 8%;
-            width: 84%;
+            transition-duration: 0.15s;
+            -webkit-transition-duration: 0.15s;
+            margin-left: 4%;
+            width: 92%;
             text-align:center;
-            border-radius:12px;
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
         }
         header > h2 {
-		    margin-left:30px;
-		}
+            margin-left:30px;
+        }
         h1{
             margin: 0 30px 0 0;
             text-align:center;
             color: rgba(105, 113, 124, 1);
-            font-size: 168%;
             font-style: italic;
             font-weight:700;
         }
         h2{
-			text-align:center;
+            text-align:center;
             margin:10px 12px 0px 10px;
             display: inline-block;
             font-weight: 500;
-            font-size:90%;
+            font-size:160%;
+            color:rgba(30,30,30,1);
         }
         h2:hover {
           -webkit-text-stroke-width: 0.2px;
@@ -103,34 +113,34 @@
         .examples-container{
             background-size: 100%;
             background-repeat-x: no-repeat;
-            width: 84%;
-            margin-left:8%;
+            width: 92%;
+            margin-left:4%;
             display: -webkit-flex;
             display: flex;
             -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
         }
         .examples-container > div {
-			color: rgba(70, 32, 27, 1);
-            background-color: rgba(215,215,217,0.5);
+            color: rgba(30, 32, 27, 1);
+            background-color: rgba(1,1,2,0.5);
             display: inline-block;
             background-size: 10%;
             background-repeat: no-repeat;
             background-position-x: 30%;
-            transition-duration: 0.85s;
-            -webkit-transition-duration: 0.85s;
-            border-radius:16px;
+            transition-duration: 1.1s;
+            -webkit-transition-duration: 1.1s;
+            border-radius:6px;
         }
         .examples-container > div:hover{
             background-color: white;
             color: black;
             z-index:100;
-            transition-duration: 0.85s;
-            -webkit-transition-duration: 0.85s;
+            transition-duration: 0.15s;
+            -webkit-transition-duration: 0.15s;
         }
         .example-project {
             text-align:center;
-		}
+        }
         .example-project > a > img {
             width: 13px;
             height:13px;
@@ -142,11 +152,11 @@
             border-color: #375965;
         }
         .example-project > a > img:hover {
-			border-color: #375995;
-		}
+            border-color: #375995;
+        }
         .example-project > a {
-	        display:inline-table;
-	        border-bottom: solid rgba(140,120,120,0.4) 1px;
+            display:inline-table;
+            border-bottom: solid rgba(140,120,120,0.4) 1px;
         }
         .example-project > p{
             padding:20px;
@@ -158,12 +168,10 @@
             display:-webkit-inline-box;
         }
         .git-link  > a {
-            #border-left: solid rgba(140,120,120,0.4) 1px;
-            border-bottom: solid rgba(140,120,120,0.4) 1px;
             padding-left: 15px;
         }
         .git-link > a >img{
-			margin-right: 7px;
+            margin-right: 7px;
             vertical-align: baseline;
         }
     </style>
@@ -180,21 +188,21 @@
         <div class="git-link">
             <a href="https://github.com/paulb896/ZoomingMapApp"><img src="github-icon-small.png"/>Source on GitHub</a>
         </div>
-        <p>With the use of <a href="https://docs.angularjs.org/guide/directive/">AngularJS Directives</a>, <a href="http://www.greensock.com">Greensock</a>, and <a href="https://developers.google.com/maps/">Google Maps Api</a>, a user can simultaneously pan and zoom around a map.</p>
+        <p>Uses <a href="https://docs.angularjs.org/guide/directive/">AngularJS Directives</a>, <a href="http://www.greensock.com">Greensock</a>, and <a href="https://developers.google.com/maps/">Google Maps Api</a>, to simultaneously pan and zoom around a map.</p>
     </div>
     <div class="example-project">
         <a href="id+buy+that/"><img src="ibt-example.jpg"><h2>I'd Buy That</h2></a>
         <div class="git-link">
             <a href="https://github.com/paulb896/IdBuyThat"><img src="github-icon-small.png"/>Source on GitHub</a>
         </div>
-        <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="http://www.createjs.com/">CreateJS</a>, users can draw blueprints of new product ideas, and have other users vote on their interest.</p>
+        <p>Uses <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="http://www.createjs.com/">CreateJS</a>, to draw blueprints of new product ideas, and have other users vote on their interest.</p>
     </div>
     <div class="example-project">
         <a href="reserve+the+time/"><img src="rtt-example.jpg"><h2>Reserve The Time</h2></a>
         <div class="git-link">
             <a href="https://github.com/paulb896/Express_Angular_Reservations"><img src="github-icon-small.png" />Source on GitHub</a>
         </div>
-        <p>With the use of <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="https://developers.google.com/accounts/docs/OAuth2">Google Auth Api</a> and <a href="https://developers.google.com/places/documentation/">Google Places Api</a>, a user can locate nearby places and request a reservation time.</p>
+        <p>Uses <a href="https://docs.angularjs.org/">AngularJS</a>, <a href="https://developers.google.com/accounts/docs/OAuth2">Google Auth Api</a> and <a href="https://developers.google.com/places/documentation/">Google Places Api</a>, to locate nearby places and request a reservation time.</p>
     </div>
     <div class="example-project">
         <a href="two+angular+apps/"><img src="twoAppsExample.png"><h2>Two Angular Apps</h2></a>
