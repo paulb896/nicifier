@@ -43,7 +43,7 @@
         }
         @media only screen and (max-width: 800px) {
             body > header {
-                height: 70px;
+                height: 78px;
                 padding-top:10px;
             }
             .example-project{
@@ -66,16 +66,16 @@
             text-decoration: none;
         }
         body{
-            background:url('controller.jpg');
-            background-position: 50% 0;
-            background-repeat:no-repeat;
+            background:url('controller2.jpg');
+            background-size:100%;
+            background-repeat: no-repeat;
+            background-position: 0 100px;
             margin:0;
             -webkit-font-smoothing:antialiased;
         }
         header{
             border-top: solid rgba(120,120,120,0.7) 3px;
             border-left: solid rgba(120,120,120,0.7) 3px;
-            border-right: solid rgba(120,120,120,0.7) 3px;
             background-color: white;
             box-shadow: 3px -2px 5px rgba(182,182,182,0.5) inset, -3px 2px 5px rgba(182,182,182,0.5) inset;
             font-style: italic;
@@ -115,16 +115,16 @@
         .examples-container{
             background-size: 100%;
             background-repeat-x: no-repeat;
-            width: 97%;
-            margin-left:1.5%;
+            width: 96%;
+            margin-left: 2%;
             display: -webkit-flex;
             display: flex;
             -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
         }
         .examples-container > div {
-            color: white;
-            background-color: rgba(1,1,2,0.5);
+            color: black;
+            background-color: rgba(243,245,244,0.1);
             display: inline-block;
             background-size: 10%;
             background-repeat: no-repeat;
@@ -139,15 +139,15 @@
             z-index:100;
             transition-duration: 0.15s;
             -webkit-transition-duration: 0.15s;
-            box-shadow: -2px 0 5px rgba(110,110,110, 0.6) inset, 2px 0 5px rgba(110,110,110, 0.6) inset;
+            box-shadow: -2px -1px 5px rgba(110,110,110, 0) inset, 2px 0 5px rgba(110,110,110, 0) inset;
         }
         .example-project {
             text-align:center;
         }
         .example-project > a > img {
-            width: 13px;
-            height:13px;
-            border-radius:1px;
+            width: 10px;
+            height:10px;
+            border-radius:2px;
             border-top:solid black 1px;
             margin-left:5px;
             border: solid rgba(100,100,100, 0.3) 2px;
