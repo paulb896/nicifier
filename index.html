@@ -67,6 +67,7 @@
         }
         body{
             -webkit-font-smoothing:antialiased;
+            margin:0;
         }
         header{
             background-color: rgb(131, 137, 144);
@@ -75,9 +76,9 @@
             overflow: hidden;
             transition-duration: 0.15s;
             -webkit-transition-duration: 0.15s;
-            margin-left: 1%;
-            width: 98%;
+            width: 100%;
             text-align:center;
+            text-shadow:1px 1px 3px black;
         }
         h1{
             margin: 5px 0 5px 0;
@@ -87,10 +88,10 @@
             font-weight:700;
         }
         h2{
-            margin:0;
+            margin:0 5px;
             text-align:center;
             display: inline-block;
-            font-weight: 500;
+            font-weight: 700;
         }
         h2 > a {
             color:white;
@@ -104,16 +105,15 @@
         p > a:hover {
             -webkit-text-stroke-width: 0.32x;
         }
-
         .examples-container{
-            background-size: 100%;
-            background-repeat-x: no-repeat;
             width: 96%;
             margin-left: 2%;
             display: -webkit-flex;
             display: flex;
             -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
+            box-shadow: 3px 2px rgba(182,182,182,0), -3px 2px rgba(182,182,182,1) inset;
+
         }
         .examples-container > div {
             color: black;
@@ -158,9 +158,6 @@
         .git-link {
             margin: 15px 10px 0 0px;
             display:-webkit-inline-box;
-        }
-        .git-link  > a {
-            padding-left: 15px;
         }
         .git-link > a >img{
             margin-right: 7px;
